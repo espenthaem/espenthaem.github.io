@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Espen Tierolff</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Glegoo"
+      rel="stylesheet"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="name-bar">
+      <p>
+        Espen Tierolff
+      </p>
+    </div>
+
+    <div class="left-sidebar">
+      <a href="#bio">About</a>
+      <a href="#contact">Contact</a>
+
+      <p>
+        Studio for Creative Coding, Artificial Intelligence Art & Data Science
+      </p>
+    </div>
+
+    <div class="main">
+      <p id="studio-header">
+        Studio for Creative Coding, Artificial Intelligence Art & Data Science
+      </p>
+
+      <img
+        id="dreaming_0"
+        class="content"
+        src="https://cdn.glitch.com/664bab14-ed43-4d81-87b0-6a3318fb0c4f%2Fdreaming_0.JPG?v=1583873869862"
+        title="dreaming_2"
+        onclick="show_dreaming()"
+      />
+
+      <img
+        id="dreaming_2"
+        class="content"
+        src="https://cdn.glitch.com/664bab14-ed43-4d81-87b0-6a3318fb0c4f%2Fdreaming_2.JPG?v=1583872716123"
+        title="dreaming_2"
+        onclick="show_dreaming()"
+      />
+
+      <img
+        id="dreaming_1"
+        class="content"
+        src="https://cdn.glitch.com/664bab14-ed43-4d81-87b0-6a3318fb0c4f%2Fdreaming_1.JPG?v=1583872731684"
+        title="dreaming_1"
+        onclick="show_dreaming()"
+      />
+
+      <video
+        id="dreaming_video"
+        class="content"
+        onclick="show_dreaming()"
+        autoplay
+        loop
+        muted
+        playsinline
+      >
+        <source
+          src="https://cdn.glitch.com/664bab14-ed43-4d81-87b0-6a3318fb0c4f%2Fdreaming.mp4?v=1583874539520"
+          type="video/mp4"
+        />
+      </video>
+
+      <div id="bio" class="bio-contact">
+        <p>
+          I am a creative technologist, artist and data scientist with a formal
+          background in physics. I am interested in exploring the artistic
+          capabilities of machines, and the way their output fits into the
+          artistic paradigm.
+          <br />
+          <br />
+          Additionally, I also like solving complex data science problems and
+          performing more general software development.
+        </p>
+        <hr />
+      </div>
+
+      <div id="contact" class="bio-contact">
+        <p>
+          <a href="mailto:e.tierolff@gmail.com">e.tierolff@gmail.com</a> <br />
+          <a href="https://github.com/espenthaem">github.com/espenthaem</a>
+        </p>
+      </div>
+
+      <div class="descriptions">
+        <div id="dreaming">
+          'Bombay Dreaming' - an artificial intelligence based art installation
+          completed as part of a residency at
+          <a href="https://brahman.ai/" target="blank">brahman_ai</a>. The
+          installation combines the art in Bombay Beach, with the faces of the
+          resident community to create dreams that capture the complex
+          relationship between artists and their environment. As the sun sets,
+          the installation comes to life at Brahman's remote-desert location,
+          Mars, ready to be stumbled upon.
+          <br />
+          <br />
+          Based on
+          <a href="https://github.com/espenthaem/autonomous-artist"
+            >StyleTransfer</a
+          >, a
+          <a href="https://github.com/espenthaem/face-morpher"
+            >Deep Convolutional Autoencoder</a
+          >
+          and open-cv.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

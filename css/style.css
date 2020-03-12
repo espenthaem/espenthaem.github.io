@@ -1,0 +1,128 @@
+/* CSS files add styling rules to your content */
+
+body {
+  margin: 2em;
+  background-color: white;
+  font-family: Glegoo;
+}
+
+.name-bar {
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  margin-right: 25px;
+  width: 20%;
+  font-size: 24px;
+  float: right;
+}
+
+.left-sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 15%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  padding-top: 0px;
+  margin-left: 5%;
+}
+
+.left-sidebar a {
+  padding: 0px 4px 0px 4px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  display: block;
+}
+
+.left-sidebar a:hover {
+  padding: 5px 5px 5px 15px;
+}
+
+.main {
+  margin-left: 15%;
+  margin-right: 25%;
+  width: 65%;
+  margin-top: 50px;
+}
+
+#studio-header {
+  display: none;
+}
+
+.descriptions {
+  top: 0;
+  right: 0;
+  position: fixed;
+  margin-top: 75px;
+  padding-right: 10px;
+  width: 25%;
+  font-size: 16px;
+  float: right;
+}
+
+.descriptions div {
+  display: none;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.content {
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 0px;
+  border-radius: 2.5%;
+  padding-top: 0px;
+  cursor: pointer;
+}
+
+.bio-contact{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  #studio-header {
+    display: block;
+  }
+
+  .name-bar {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .descriptions {
+    width: 90%;
+  }
+
+  .descriptions {
+    top: 20%;
+    position: fixed;
+  }
+
+  .left-sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin-left: 5%;
+  }
+  .left-sidebar a {
+    float: left;
+  }
+  .left-sidebar p {
+    display: none;
+  }
+}
